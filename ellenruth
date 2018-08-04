@@ -14,4 +14,4 @@ split_libraries_fastq.py -i Raw_Read3.fq.gz -o split_libraries_R2 -m Demultiplex
 
 module load Qiime/1.9.1-base
 cd /scratch/user/ellenruth/Baylor_16S_data/R1_split/split_libraries_R2 #file location will differ
-convert_fastaqual_fastq.py -i seqs.fna -q qual.fna -o finallyFastqR2 -b -m -a -c fastaqual_to_fastq
+convert_fastaqual_fastq.py -i seqs.fna -q qual.fna -o finallyFastqR2 -b -m -c fastaqual_to_fastq
