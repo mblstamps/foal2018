@@ -2,8 +2,10 @@
 # I am adding on to this file too!!!
 
 #### 04Aug18 (ERA) - My attempt to fix the file formatting error using QIIME1 python scripts 
-## The first code used was split_libraries_fastq.py (http://qiime.org/scripts/split_libraries_fastq.html);
+## The first code used was split_libraries_fastq.py --(http://qiime.org/scripts/split_libraries_fastq.html);
+### Used to ID the various samples based on their barcodes from the fastq barcode file
 ##second script to be used is the convert_fastqual_fastq.py (http://qiime.org/scripts/convert_fastaqual_fastq.html) 
+#### Used to convert file from the split_libraries_fastq.py script back to a fastq file format and will split them based on their sample names.
 
 #Both python scripts run in command line
 module load Qiime/1.9.1-base
