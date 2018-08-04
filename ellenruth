@@ -1,4 +1,15 @@
  ## Yay my terrible codes for the unicorns coughing up rainbows :)
-## blah blah *blah*
-
 # I am adding on to this file too!!!
+
+#### 04Aug18 (ERA) - My attempt to fix the file formatting error using QIIME1 python scripts 
+## The first code used was split_libraries_fastq.py (http://qiime.org/scripts/split_libraries_fastq.html);
+##second script to be used is the convert_fastqual_fastq.py (http://qiime.org/scripts/convert_fastaqual_fastq.html) 
+
+#Both python scripts run in command line
+module load Qiime/1.9.1-base
+cd /scratch/user/ellenruth/Baylor_16S_data/R2_split #file location will differ
+split_libraries_fastq.py -i Raw_Read3.fq.gz -o split_libraries_R2 -m Demultiplex_R2.txt -b Raw_Read2_Barcodes.fq.gz --store_qual_scores
+
+module load Qiime/1.9.1-base
+cd /scratch/user/ellenruth/Baylor_16S_data/R1_split/split_libraries_R2 #file location will differ
+convert_fastaqual_fastq.py -i seqs.fna -q qual.fna -o finallyFastqR2 -b -m -a -c fastaqual_to_fastq
